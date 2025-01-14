@@ -165,7 +165,7 @@
                                     <form method="POST" action="{{route('logout')}}" id="logout-form">
                                         @csrf
                                         <a href="{{route('logout')}}" class="menu-link menu-link_us-s" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                        <div class="icon"><i class="icon-settings"></i></div>
+                                        <div class="icon"><i class="icon-log-out"></i></div>
                                         <div class="text">Logout</div>
                                         </a>
                                     </form>
@@ -440,12 +440,13 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="login.html" class="user-item">
-                                                    <div class="icon">
-                                                        <i class="icon-log-out"></i>
-                                                    </div>
-                                                    <div class="body-title-2">Log out</div>
-                                                </a>
+                                            <form method="POST" action="{{route('logout')}}" id="logout-form">
+                                        @csrf
+                                        <a href="{{route('logout')}}" class="user-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                        <div class="icon"><i class="icon-log-out"></i></div>
+                                        <div class="body-title-2">Logout</div>
+                                        </a>
+                                    </form>
                                             </li>
                                         </ul>
                                     </div>
@@ -459,7 +460,7 @@
 
 
                         <div class="bottom-page">
-                            <div class="body-text">Copyright © 2024 SurfsideMedia</div>
+                            <div class="body-text">Copyright © 2025 NexGen Media</div>
                         </div>
                     </div>
 
