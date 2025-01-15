@@ -10,4 +10,10 @@ class AdminController extends Controller
     {
         return view('admin.index');
     }
+
+
+    public function add_brand()
+    {
+        return view("admin.brand-add");
+    }
 }
