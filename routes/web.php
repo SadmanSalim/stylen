@@ -28,6 +28,7 @@ Route::middleware(['auth'])->group(function(){
 Route::middleware(['auth', AuthAdmin::class])->group(function(){
     Route::get('/admin',[AdminController::class,'index'])->name('admin.index');
     Route::get('/admin/brands',[AdminController::class,'brands'])->name('admin.brands');
+<<<<<<< HEAD
     Route::get('/admin/brand/add',[AdminController::class,'add_brand'])->name('admin.brand.add');
     Route::post('/admin/brand/store',[AdminController::class,'brand_store'])->name('admin.brand.store');
     Route::post('/admin/brand/store',[AdminController::class,'add_brand_store'])->name('admin.brand.store');
@@ -46,4 +47,6 @@ Route::middleware(['auth', AuthAdmin::class])->group(function(){
     Route::get('/admin/product/{id}/edit',[AdminController::class,'edit_product'])->name('admin.product.edit');
     Route::put('/admin/product/update',[AdminController::class,'update_product'])->name('admin.product.update');
     Route::delete('/admin/product/{id}/delete',[AdminController::class,'delete_product'])->name('admin.product.delete');
+=======
+>>>>>>> 920a32f17a8a599689dc47550c783e64855796fd
 });

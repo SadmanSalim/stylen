@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 920a32f17a8a599689dc47550c783e64855796fd
 @extends('layouts.admin')
 
 @section('content')
@@ -63,7 +67,11 @@
                                 <td>{{$brand->id}}</td>
                                 <td class="pname">
                                     <div class="image">
+<<<<<<< HEAD
                                         <img src="{{asset('uploads/brands')}}/{{$brand->image}}" alt="" class="image">
+=======
+                                        <img src="{{asset('uploads/brands')}}/{{$brand->image}}" alt="{{$brand->name}}" class="image">
+>>>>>>> 920a32f17a8a599689dc47550c783e64855796fd
                                     </div>
                                     <div class="name">
                                         <a href="#" class="body-title-2">{{$brand->name}}</a>                                       
@@ -87,6 +95,7 @@
                     </table>                
                 </div>
             <div class="divider"></div>
+<<<<<<< HEAD
            
         </div>
     </div>
@@ -113,3 +122,12 @@
         });
     </script>
 @endpush
+=======
+           <div class="flex items-center justify-between flex-wrap gap10 wgp-pagination">
+            {{ $brand->links('pagination::bootstrap-5') }};
+           </div>
+        </div>
+    </div>
+</div>
+@endsection
+>>>>>>> 920a32f17a8a599689dc47550c783e64855796fd

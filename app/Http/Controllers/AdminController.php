@@ -2,10 +2,14 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Product;
 use Carbon\Carbon;
+=======
+use App\models\Brand;
+>>>>>>> 920a32f17a8a599689dc47550c783e64855796fd
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\File;
@@ -17,6 +21,7 @@ class AdminController extends Controller
     {
         return view('admin.index');
     }
+<<<<<<< HEAD
 
     public function brands()
 {
@@ -378,4 +383,10 @@ public function delete_product($id)
 } 
 
 
+=======
+    public function brands(){
+       $brands = Brand::orderBy('id','DESC')->paginate(10);
+       return view('admin.brands',compact('brands'));
+   }
+>>>>>>> 920a32f17a8a599689dc47550c783e64855796fd
 }
