@@ -69,12 +69,12 @@
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="sub-menu-item">
-                                            <a href="add-product.html" class="">
+                                            <a href="{{route('admin.product.add')}}" class="">
                                                 <div class="text">Add Product</div>
                                             </a>
                                         </li>
                                         <li class="sub-menu-item">
-                                            <a href="products.html" class="">
+                                            <a href="{{route('admin.products')}}" class="">
                                                 <div class="text">Products</div>
                                             </a>
                                         </li>
@@ -87,12 +87,12 @@
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="sub-menu-item">
-                                            <a href="add-brand.html" class="">
+                                            <a href="#" class="">
                                                 <div class="text">New Brand</div>
                                             </a>
                                         </li>
                                         <li class="sub-menu-item">
-                                            <a href="brands.html" class="">
+                                            <a href="{{route('admin.brands')}}" class="">
                                                 <div class="text">Brands</div>
                                             </a>
                                         </li>
@@ -105,12 +105,12 @@
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="sub-menu-item">
-                                            <a href="add-category.html" class="">
+                                            <a href="#" class="">
                                                 <div class="text">New Category</div>
                                             </a>
                                         </li>
                                         <li class="sub-menu-item">
-                                            <a href="categories.html" class="">
+                                            <a href="{{route('admin.categories')}}" class="">
                                                 <div class="text">Categories</div>
                                             </a>
                                         </li>
@@ -165,8 +165,8 @@
                                     <form method="POST" action="{{route('logout')}}" id="logout-form">
                                         @csrf
                                         <a href="{{route('logout')}}" class="menu-link menu-link_us-s" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                        <div class="icon"><i class="icon-log-out"></i></div>
-                                        <div class="text">Logout</div>
+                                            <div class="icon"><i class="icon-log-out"></i></div>
+                                            <div class="text">Logout</div>
                                         </a>
                                     </form>
                                 </li>
@@ -440,13 +440,13 @@
                                                 </a>
                                             </li>
                                             <li>
-                                            <form method="POST" action="{{route('logout')}}" id="logout-form">
-                                        @csrf
-                                        <a href="{{route('logout')}}" class="user-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                        <div class="icon"><i class="icon-log-out"></i></div>
-                                        <div class="body-title-2">Logout</div>
-                                        </a>
-                                    </form>
+                                                <form method="POST" action="{{route('logout')}}" id="logout-form">
+                                                    @csrf
+                                                    <a href="{{route('logout')}}" class="user-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                                        <div class="icon"><i class="icon-log-out"></i></div>
+                                                        <div class="body-title-2">Logout</div>
+                                                    </a>
+                                                </form>
                                             </li>
                                         </ul>
                                     </div>
